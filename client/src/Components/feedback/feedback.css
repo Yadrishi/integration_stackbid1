@@ -1,0 +1,92 @@
+/* feedback-golden-black.css */
+
+/* Styles for the blurred background image */
+body {
+    background-image: url('C: \Users\ABC\StackBid-Devops-Powered-Auction-Platform\stackbid\feedback.jpeg');
+    /* Path to your background image */
+    background-size: cover;
+    /* Cover the entire viewport */
+    background-position: center;
+    /* Center the background image */
+    background-attachment: fixed;
+    /* Fixed background position */
+}
+
+/* Styles for the feedback container */
+.feedback-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    border: 1px solid #ffd700;
+    /* Golden border color */
+    border-radius: 8px;
+    background-color: #000;
+    /* Black background color */
+    color: #ffd700;
+    /* Golden text color */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    /* Soft shadow effect */
+    margin-bottom: 50px; /* Add margin at the bottom to create space for the footer */
+}
+
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 150px); /* Adjust based on the height of the footer */
+}
+
+.input-group {
+    margin-bottom: 30px;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+input[type='text'],
+input[type='email'],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    /* Smooth transition on focus */
+    background-color: #000;
+    /* Black background color */
+    color: #ffd700;
+    /* Golden text color */
+}
+
+input[type='text']:focus,
+input[type='email']:focus,
+textarea:focus {
+    outline: none;
+    border-color: #ffd700;
+    /* Golden border color when focused */
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    width: 150px;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffd700;
+    /* Golden button color */
+    color: #000;
+    /* Black text color */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    /* Smooth transition on hover */
+}
+
+button:hover {
+    background-color: #777;
+    /* Darker shade on hover */
+}

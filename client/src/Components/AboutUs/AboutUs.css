@@ -1,0 +1,82 @@
+body {
+  background-color: black; /* Set background color of the page to black */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.about-us-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-us-text {
+  flex: 1;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+}
+
+.about-us-content {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 70%; 
+  padding: 20px; 
+  margin-right: 10px; 
+  margin-left: 160px;
+  color: white;
+  font-size: 22px;
+}
+
+.about-us-image img {
+  width : 100%;
+  max-width: 500px;
+  height: auto;
+  margin-right : 50px;
+  margin-top: 150px;
+}
+
+.buttons-container {
+  margin-top: 20px;
+}
+
+.sign-up-button,
+.sign-in-button {
+  padding: 6px 12px;
+  margin-right: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+
+}
+
+.sign-up-button:hover,
+.sign-in-button:hover {
+  background-color: #0056b3;
+}
+
+.about-us-text h3 {
+  padding: 10px 50px;
+  font-size: 40px;
+  background-color: goldenrod;
+  border-radius: 10px;
+  color: black;
+  width: 50%;
+  margin: 0 220px;
+  text-align: center; 
+}
+
+.about-us-text h2 {
+  margin-left: 100px;
+}
+
+.StackBidLarge{
+  font-size: 1.4em; 
+  font-weight: bold; 
+  font-family: 'Times New Roman', Times, serif;
+  color: goldenrod;
+}
+

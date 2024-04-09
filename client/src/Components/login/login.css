@@ -1,0 +1,52 @@
+/* Login.css */
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 250vh;
+    background: url(./LoginImg.jpg)
+    /* background-image: url('stackbid/src/Components/login/LoginImg.jpg'); */
+}
+
+.login-form {
+    background-color: #0e0e0e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(232, 229, 65, 0.5);
+    max-width: 420px;
+    /* Set maximum width for the form */
+    width: 90%;
+    /* Adjust width as needed */
+}
+
+.login-form h2 {
+    margin-top: 0;
+    text-align: center;
+    color: #ffd700;
+}
+
+.login-form input,
+.login-form select {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    color: #ffd700;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ffd700; /* Golden button color */
+    color: #000; /* Black text color */
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: #c0a300;
+} 
