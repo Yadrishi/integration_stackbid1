@@ -2,12 +2,14 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 const db = require("./db");
+require("dotenv").config();
 
 app.use(cors());
 app.use(express.json());
 
 const bodyParser = require("body-parser");
 app.use(bodyParser.json()); //saves it in req.body
+const PORT = process.env.PORT || 5000;
 
 const SignIn = require("./models/SignIn");
 const SignUp = require("./models/SignUp");
@@ -44,6 +46,6 @@ app.use("/UploadItem", uploadItemRoutes);
 app.use("/bidrecord", bidRoutes);
 //app.use("/Profile", profileRoutes);
 
-app.listen(5000, () => {
+app.listen(PORT, () => {
   console.log("i am listening on port 5000");
 });

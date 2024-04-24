@@ -1,5 +1,9 @@
 const mongoose = require("mongoose");
-const mongoURL = "mongodb://localhost:27017/stackbiddatabase"; //replace 'fooddatabase' with your database
+//const mongoURL =process.env.MONGODBURL_LOCAL ; //replace 'fooddatabase' with your database
+require("dotenv").config();
+const mongoURL = process.env.MONGODB_URL;
+
+
 mongoose.connect(mongoURL, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
