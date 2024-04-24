@@ -20,7 +20,7 @@ router.post("/", async (req, res) => {
 router.get("/", async (req, res) => {
   try {
     const data = await Feedback.find(); //all documents are retrieved from 'Person' collection
-    console.log("Data fetched from Person collection");
+    console.log("Data fetched from Feedback collection");
     res.status(200).json(data);
   } catch {
     console.log(err);

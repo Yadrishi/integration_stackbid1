@@ -94,6 +94,7 @@ function App() {
         <Route path="/profile" element={<Profile />} />
         <Route path="/feedback" element={<Feedback />} />
       </Routes>
+      {/* <Footer /> */}
     </BrowserRouter>
   );
 }

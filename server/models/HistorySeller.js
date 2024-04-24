@@ -3,7 +3,6 @@ const mongoose = require("mongoose");
 const historyseller = new mongoose.Schema({
   auctionPlacedDate: {
     type: Date,
-    required: true,
     default: Date.now,
   },
   status: {
@@ -18,7 +17,6 @@ const historyseller = new mongoose.Schema({
   itemId: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "Item",
-    required: true,
   },
   description: {
     type: String,
